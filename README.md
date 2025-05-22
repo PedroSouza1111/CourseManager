@@ -14,4 +14,11 @@ dotnet ef database update --project CourseManager.Core --startup-project CourseM
 dotnet run --project CourseManager.API
 ```
 
-Swagger disponível em: `https://localhost:{PORT}/swagger`
+## Endpoints
+
+Método HTTP	       Rota	                     Descrição
+GET	           /api/courses	            Lista todos os cursos
+GET	           /api/courses/{id}     	  Retorna um curso por ID
+POST	         /api/courses	            Cria um novo curso
+PUT	           /api/courses/{id}  	    Atualiza um curso existente
+DELETE	       /api/courses/{id}	      Remove um curso por ID
